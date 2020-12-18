@@ -27,7 +27,7 @@ const auto luau_compile = reinterpret_cast<luau_compiler_t>(reinterpret_cast<std
 void core()
 {
 	alloc_console();
-	const auto bytecode = luau_compile("warn'a'", { 1, 1, 1, 0 }, &key, 0);
+	const auto bytecode = luau_compile("warn'a'", { 1, 1, 2, 0 }, &key, 0);
 }
 
 bool __stdcall DllMain(const HMODULE dllHandle, const DWORD reason, const void*)
