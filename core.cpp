@@ -1,3 +1,5 @@
+// by CompiledCode#1234 @ https://github.com/Compiled-Code/StudioLuauCompiler
+
 #include <Windows.h>
 #include <thread>
 #include <string>
