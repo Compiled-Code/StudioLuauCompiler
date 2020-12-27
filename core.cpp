@@ -32,9 +32,6 @@ void core()
 {
 	alloc_console();
 	const auto bytecode = luau_compile("do end", { 1, 1, 2, 0 }, { 0, 0 });
-
-	for (const auto& b : bytecode)
-		printf("%02X ", b);
 }
 
 bool __stdcall DllMain(const HMODULE dllHandle, const DWORD reason, const void*)
