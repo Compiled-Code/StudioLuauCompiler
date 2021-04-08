@@ -34,7 +34,7 @@ void core()
 	const auto bytecode = luau_compile("do end", { 1, 1, 2, 0 }, { 0, 0 });
 }
 
-bool __stdcall DllMain(const HMODULE dllHandle, const DWORD reason, const void*)
+bool __stdcall DllMain(HMODULE, const DWORD reason, void*)
 {
 	if (reason == DLL_PROCESS_ATTACH)
 		std::thread(core).detach();
