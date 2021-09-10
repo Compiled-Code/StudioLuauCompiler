@@ -11,7 +11,7 @@ inline void alloc_console()
 	freopen_s(&v, "CONIN$", "r", stdin);
 	freopen_s(&v, "CONOUT$", "w", stdout);
 	freopen_s(&v, "CONOUT$", "w", stderr);
-	fclose(v);
+	
 	SetConsoleTitleA("Luau Studio Compiler | CompiledCode#1234");
 }
 
